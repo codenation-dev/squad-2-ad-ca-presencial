@@ -5,7 +5,6 @@ import br.com.codenation.centralerrosapi.dto.LogDTO;
 import br.com.codenation.centralerrosapi.dto.LogDetailDTO;
 import br.com.codenation.centralerrosapi.mappers.LogDetailMapper;
 import br.com.codenation.centralerrosapi.mappers.LogMapper;
-import br.com.codenation.centralerrosapi.model.Log;
 import br.com.codenation.centralerrosapi.service.LogService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -36,6 +35,7 @@ public class LogController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "OK", response = LogDTO.class, responseContainer = "List"),
             @ApiResponse(code = 400, message = "Requisição mal formatada", response = ErrorMessage.class),
+            @ApiResponse(code = 401, message = "Acesso não autorizado", response = ErrorMessage.class),
             @ApiResponse(code = 500, message = "Erro na api", response = ErrorMessage.class)
     })
     @GetMapping(value = "/logs", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -61,6 +61,7 @@ public class LogController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "OK", response = LogDetailDTO.class),
             @ApiResponse(code = 400, message = "Requisição mal formatada", response = ErrorMessage.class),
+            @ApiResponse(code = 401, message = "Acesso não autorizado", response = ErrorMessage.class),
             @ApiResponse(code = 404, message = "Log não encontrado", response = ErrorMessage.class),
             @ApiResponse(code = 500, message = "Erro na api", response = ErrorMessage.class)
     })
@@ -76,6 +77,7 @@ public class LogController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Log arquivado", response = LogDTO.class),
             @ApiResponse(code = 400, message = "Requisição mal formatada", response = ErrorMessage.class),
+            @ApiResponse(code = 401, message = "Acesso não autorizado", response = ErrorMessage.class),
             @ApiResponse(code = 404, message = "Log não encontrado", response = ErrorMessage.class),
             @ApiResponse(code = 500, message = "Erro na api", response = ErrorMessage.class)
     })
@@ -91,6 +93,7 @@ public class LogController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Log desarquivado", response = LogDTO.class),
             @ApiResponse(code = 400, message = "Requisição mal formatada", response = ErrorMessage.class),
+            @ApiResponse(code = 401, message = "Acesso não autorizado", response = ErrorMessage.class),
             @ApiResponse(code = 404, message = "Log não encontrado", response = ErrorMessage.class),
             @ApiResponse(code = 500, message = "Erro na api", response = ErrorMessage.class)
     })
