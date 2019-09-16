@@ -1,20 +1,18 @@
 package br.com.codenation.logstackapi;
 
-import br.com.codenation.logstackapi.dto.UserCreateDTOTest;
-import br.com.codenation.logstackapi.model.entity.LogApplicationTest;
-import br.com.codenation.logstackapi.model.entity.LogDetailTest;
-import br.com.codenation.logstackapi.model.entity.LogTest;
+import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
 
-@RunWith(Suite.class)
-@Suite.SuiteClasses({
-		UserCreateDTOTest.class,
-		LogTest.class,
-		LogDetailTest.class,
-		LogApplicationTest.class
-})
+@ActiveProfiles("test")
+@RunWith(SpringRunner.class)
+@SpringBootTest
 public class LogStackApplicationTests {
 
+	@Test
+	public void contextLoads() {
+	}
 
 }
