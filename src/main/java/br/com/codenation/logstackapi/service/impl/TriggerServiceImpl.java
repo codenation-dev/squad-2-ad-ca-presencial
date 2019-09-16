@@ -36,14 +36,12 @@ public class TriggerServiceImpl implements TriggerService {
         return triggerRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Gatilho não encontrado"));
     }
+    
     public Trigger update(UUID id, TriggerCreateDTO dto) {
-
         if (dto.isNull()) throw new IllegalArgumentException("Deve informar no mínimo uma das opções de filtro");
-        Trigger trigger=findById(id);
-        trigger= mapper.map(dto);
+        Trigger trigger = findById(id);
+        trigger = mapper.map(dto);
         return triggerRepository.save(trigger);
-
-
     }
 
     public Trigger archive(UUID id) {
