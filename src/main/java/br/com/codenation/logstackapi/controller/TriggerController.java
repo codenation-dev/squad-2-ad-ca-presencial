@@ -68,4 +68,18 @@ public class TriggerController {
         return mapper.map(service.findById(id));
     }
 
+   @ApiOperation(
+            value = "Atualiza dados do gatilho por Id",
+            notes = "Método utilizado para atualizar o Trigger cadastrados."
+    )
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "Gatilho atualizado", response = TriggerDTO.class),
+            @ApiResponse(code = 400, message = "Requisição mal formatada", response = ErrorMessageDTO.class),
+            @ApiResponse(code = 500, message = "Erro na api", response = ErrorMessageDTO.class)
+    })
+    @PutMapping(value = "/triggers/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
+    private TriggerDTO update(@PathVariable UUID id, @RequestBody TriggerCreateDTO dto) {
+        return mapper.map(service.update(id, dto));
+    }
+
 }
