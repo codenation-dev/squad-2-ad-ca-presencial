@@ -130,7 +130,7 @@ public class LogController {
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Log criado", response = LogResponseDTO.class),
             @ApiResponse(code = 400, message = "Requisão mal formatada", response = ErrorResponseDTO.class),
-            @ApiResponse(code = 500, message = "Erro na apo", response = ErrorResponseDTO.class)
+            @ApiResponse(code = 500, message = "Erro na api", response = ErrorResponseDTO.class)
     })
     @PostMapping(value = "/logs", produces = MediaType.APPLICATION_JSON_VALUE)
     private LogResponseDTO save(@Valid @RequestBody LogRequestDTO dto) {
