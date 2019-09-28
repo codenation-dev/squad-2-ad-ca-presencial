@@ -19,15 +19,6 @@ public class CustomerBuilder {
         return builder;
     }
 
-    public static CustomerBuilder doisCustomer() {
-        CustomerBuilder builder = new CustomerBuilder();
-        builder.customer = Customer.builder().user(UserBuilder.codenation().build())
-                .apiKey(UUID.randomUUID())
-                .id(UUID.randomUUID())
-                .build();
-        return builder;
-    }
-
     public Customer build() {
         return customer;
     }
