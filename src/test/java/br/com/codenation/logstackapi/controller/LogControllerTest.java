@@ -1,9 +1,9 @@
 package br.com.codenation.logstackapi.controller;
 
 
-import br.com.codenation.logstackapi.builders.CustomerBuilder;
-import br.com.codenation.logstackapi.builders.LogBuilder;
-import br.com.codenation.logstackapi.builders.LogRequestDTOBuilder;
+import br.com.codenation.logstackapi.builders.model.CustomerBuilder;
+import br.com.codenation.logstackapi.builders.model.LogBuilder;
+import br.com.codenation.logstackapi.builders.request.LogRequestDTOBuilder;
 import br.com.codenation.logstackapi.dto.request.LogRequestDTO;
 import br.com.codenation.logstackapi.model.entity.Customer;
 import br.com.codenation.logstackapi.model.entity.Log;

@@ -1,6 +1,6 @@
 package br.com.codenation.logstackapi.controller;
 
-import br.com.codenation.logstackapi.builders.UserResquestBuilder;
+import br.com.codenation.logstackapi.builders.request.UserResquestBuilder;
 import br.com.codenation.logstackapi.dto.request.UserRequestDTO;
 import br.com.codenation.logstackapi.service.impl.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;

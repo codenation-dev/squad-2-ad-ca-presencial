@@ -1,6 +1,6 @@
 package br.com.codenation.logstackapi.mapper;
 
-import br.com.codenation.logstackapi.builders.CustomerBuilder;
+import br.com.codenation.logstackapi.builders.model.CustomerBuilder;
 import br.com.codenation.logstackapi.dto.response.CustomerResponseDTO;
 import br.com.codenation.logstackapi.mappers.CustomerMapper;
 import br.com.codenation.logstackapi.model.entity.Customer;

@@ -1,6 +1,6 @@
 package br.com.codenation.logstackapi.mapper;
 
-import br.com.codenation.logstackapi.builders.AlertBuilder;
+import br.com.codenation.logstackapi.builders.model.AlertBuilder;
 import br.com.codenation.logstackapi.dto.response.AlertResponseDTO;
 import br.com.codenation.logstackapi.mappers.AlertMapper;
 import br.com.codenation.logstackapi.model.entity.Alert;

@@ -1,7 +1,7 @@
 package br.com.codenation.logstackapi.service.impl;
 
-import br.com.codenation.logstackapi.builders.UserBuilder;
-import br.com.codenation.logstackapi.builders.UserResquestBuilder;
+import br.com.codenation.logstackapi.builders.model.UserBuilder;
+import br.com.codenation.logstackapi.builders.request.UserResquestBuilder;
 import br.com.codenation.logstackapi.dto.request.UserRequestDTO;
 import br.com.codenation.logstackapi.mappers.UserMapper;
 import br.com.codenation.logstackapi.model.entity.Customer;

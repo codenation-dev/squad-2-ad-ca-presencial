@@ -1,6 +1,6 @@
 package br.com.codenation.logstackapi.service.impl;
 
-import br.com.codenation.logstackapi.builders.AlertBuilder;
+import br.com.codenation.logstackapi.builders.model.AlertBuilder;
 import br.com.codenation.logstackapi.model.entity.Alert;
 import br.com.codenation.logstackapi.model.entity.AlertSearch;
 import br.com.codenation.logstackapi.repository.AlertRepository;

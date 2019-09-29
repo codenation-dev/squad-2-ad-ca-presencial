@@ -1,8 +1,8 @@
 package br.com.codenation.logstackapi.controller;
 
-import br.com.codenation.logstackapi.builders.TriggerBuilder;
-import br.com.codenation.logstackapi.builders.TriggerRequestDTOBuilder;
-import br.com.codenation.logstackapi.builders.UserBuilder;
+import br.com.codenation.logstackapi.builders.model.TriggerBuilder;
+import br.com.codenation.logstackapi.builders.request.TriggerRequestDTOBuilder;
+import br.com.codenation.logstackapi.builders.model.UserBuilder;
 import br.com.codenation.logstackapi.dto.request.TriggerRequestDTO;
 import br.com.codenation.logstackapi.mappers.TriggerMapper;
 import br.com.codenation.logstackapi.model.entity.Trigger;

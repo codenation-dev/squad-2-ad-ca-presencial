@@ -1,7 +1,7 @@
 package br.com.codenation.logstackapi.mapper;
 
-import br.com.codenation.logstackapi.builders.LogBuilder;
-import br.com.codenation.logstackapi.builders.LogRequestBuilder;
+import br.com.codenation.logstackapi.builders.model.LogBuilder;
+import br.com.codenation.logstackapi.builders.request.LogRequestBuilder;
 import br.com.codenation.logstackapi.dto.request.LogRequestDTO;
 import br.com.codenation.logstackapi.dto.response.LogResponseDTO;
 import br.com.codenation.logstackapi.mappers.LogMapper;

@@ -1,7 +1,7 @@
 package br.com.codenation.logstackapi.service.impl;
 
-import br.com.codenation.logstackapi.builders.CustomerBuilder;
-import br.com.codenation.logstackapi.builders.UserBuilder;
+import br.com.codenation.logstackapi.builders.model.CustomerBuilder;
+import br.com.codenation.logstackapi.builders.model.UserBuilder;
 import br.com.codenation.logstackapi.model.entity.Customer;
 import br.com.codenation.logstackapi.model.entity.User;
 import br.com.codenation.logstackapi.repository.CustomerRepository;

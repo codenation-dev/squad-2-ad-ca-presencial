@@ -1,15 +1,10 @@
 package br.com.codenation.logstackapi.mapper;
 
-import br.com.codenation.logstackapi.builders.LogBuilder;
-import br.com.codenation.logstackapi.builders.TriggerBuilder;
-import br.com.codenation.logstackapi.builders.TriggerRequestDTOBuilder;
-import br.com.codenation.logstackapi.dto.request.LogRequestDTO;
+import br.com.codenation.logstackapi.builders.model.TriggerBuilder;
+import br.com.codenation.logstackapi.builders.request.TriggerRequestDTOBuilder;
 import br.com.codenation.logstackapi.dto.request.TriggerRequestDTO;
-import br.com.codenation.logstackapi.dto.response.LogResponseDTO;
 import br.com.codenation.logstackapi.dto.response.TriggerResponseDTO;
-import br.com.codenation.logstackapi.mappers.LogMapper;
 import br.com.codenation.logstackapi.mappers.TriggerMapper;
-import br.com.codenation.logstackapi.model.entity.Log;
 import br.com.codenation.logstackapi.model.entity.Trigger;
 import org.hamcrest.Matchers;
 import org.junit.Assert;

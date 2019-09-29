@@ -1,4 +1,4 @@
-package br.com.codenation.logstackapi.builders;
+package br.com.codenation.logstackapi.builders.model;
 
 import br.com.codenation.logstackapi.model.entity.User;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;

@@ -1,10 +1,6 @@
-package br.com.codenation.logstackapi.builders;
+package br.com.codenation.logstackapi.builders.request;
 
 import br.com.codenation.logstackapi.dto.request.TriggerRequestDTO;
-import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 
 public class TriggerRequestDTOBuilder {
 

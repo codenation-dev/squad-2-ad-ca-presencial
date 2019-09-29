@@ -1,4 +1,4 @@
-package br.com.codenation.logstackapi.builders;
+package br.com.codenation.logstackapi.builders.request;
 
 import br.com.codenation.logstackapi.dto.request.LogRequestDTO;
 import br.com.codenation.logstackapi.model.enums.LogLevel;

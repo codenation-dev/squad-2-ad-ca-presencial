@@ -1,7 +1,7 @@
 package br.com.codenation.logstackapi.controller;
 
-import br.com.codenation.logstackapi.builders.AlertBuilder;
-import br.com.codenation.logstackapi.builders.UserBuilder;
+import br.com.codenation.logstackapi.builders.model.AlertBuilder;
+import br.com.codenation.logstackapi.builders.model.UserBuilder;
 import br.com.codenation.logstackapi.model.entity.Alert;
 import br.com.codenation.logstackapi.model.entity.User;
 import br.com.codenation.logstackapi.repository.AlertRepository;

@@ -1,8 +1,6 @@
-package br.com.codenation.logstackapi.builders;
+package br.com.codenation.logstackapi.builders.request;
 
 import br.com.codenation.logstackapi.dto.request.TriggerFilterRequestDTO;
-import br.com.codenation.logstackapi.dto.request.TriggerRequestDTO;
-import br.com.codenation.logstackapi.model.entity.TriggerFilter;
 import br.com.codenation.logstackapi.model.enums.LogEnvironment;
 import br.com.codenation.logstackapi.model.enums.LogLevel;
 

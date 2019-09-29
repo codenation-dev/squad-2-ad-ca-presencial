@@ -1,9 +1,9 @@
 package br.com.codenation.logstackapi.service.impl;
 
-import br.com.codenation.logstackapi.builders.CustomerBuilder;
-import br.com.codenation.logstackapi.builders.LogBuilder;
-import br.com.codenation.logstackapi.builders.LogRequestDTOBuilder;
-import br.com.codenation.logstackapi.builders.LogSearchBuilder;
+import br.com.codenation.logstackapi.builders.model.CustomerBuilder;
+import br.com.codenation.logstackapi.builders.model.LogBuilder;
+import br.com.codenation.logstackapi.builders.request.LogRequestDTOBuilder;
+import br.com.codenation.logstackapi.builders.model.LogSearchBuilder;
 import br.com.codenation.logstackapi.dto.request.LogRequestDTO;
 import br.com.codenation.logstackapi.exception.ResourceNotFoundException;
 import br.com.codenation.logstackapi.mappers.LogMapper;
