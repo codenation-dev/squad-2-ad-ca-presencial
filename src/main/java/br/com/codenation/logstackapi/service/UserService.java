@@ -20,6 +20,7 @@ import java.util.UUID;
 @AllArgsConstructor
 public class UserService {
 
+    private SecurityService securityService;
     private CustomerService customerService;
     private UserRepository repository;
     private UserMapper mapper;
@@ -54,7 +55,7 @@ public class UserService {
 
     public User update(UUID id, UserRequestDTO dto) {
         User user = findById(id);
-        User userAuth = (User) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        User userAuth = securityService.getUserAuthenticated();
 
         if (!user.getId().equals(userAuth.getId())) {
             throw new IllegalArgumentException("Authenticated user is not the same as informed user");
